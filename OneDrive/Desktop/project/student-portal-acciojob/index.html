@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Portal</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <h1>Student Portal</h1>
+    </header>
+
+    <main class="portal">
+      <section class="search-row" aria-label="Student search">
+        <input
+          id="searchInput"
+          type="search"
+          placeholder="Search"
+          autocomplete="off"
+          aria-label="Search by first name, last name, or email"
+        />
+        <button id="searchButton" type="button">Search</button>
+      </section>
+
+      <section class="button-row" aria-label="Sort students">
+        <button type="button" data-action="az">Sort A-&gt;Z</button>
+        <button type="button" data-action="za">Sort Z-&gt;A</button>
+        <button type="button" data-action="marks">Sort By Marks</button>
+        <button type="button" data-action="passing">Sort By Passing</button>
+        <button type="button" data-action="class">Sort By Class</button>
+        <button type="button" data-action="gender">Sort By Gender</button>
+      </section>
+
+      <section id="tablesContainer" class="tables-container" aria-live="polite"></section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

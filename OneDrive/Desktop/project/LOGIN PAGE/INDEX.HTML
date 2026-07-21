@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Signup Form</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="page">
+    <section class="signup-card">
+      <div class="header">
+        <p class="eyebrow">Start for free</p>
+        <h1>Create new account.</h1>
+        <p class="subtitle">Already a member? <a href="#">Log in</a></p>
+      </div>
+
+      <form id="signupForm">
+        <div class="field">
+          <label for="email">Email</label>
+          <input id="email" type="email" placeholder="name@example.com" />
+          <p id="emailMessage" class="message"></p>
+        </div>
+
+        <div class="field">
+          <label for="password">Password</label>
+          <input id="password" type="password" placeholder="At least 9 characters" />
+          <p id="passwordMessage" class="message"></p>
+        </div>
+
+        <p id="successMessage" class="success-message"></p>
+
+        <button type="submit" class="submit-button">Create account</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

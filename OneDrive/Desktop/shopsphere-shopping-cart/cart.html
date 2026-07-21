@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>My cart | ShopSphere</title>
+
+  <link
+    rel="preconnect"
+    href="https://fonts.googleapis.com"
+  >
+
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  >
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+
+  <link
+    rel="stylesheet"
+    href="css/style.css"
+  >
+</head>
+
+<body>
+  <div id="siteHeader"></div>
+
+  <main class="cart-page">
+    <div>
+      <p class="eyebrow">YOUR BAG</p>
+
+      <h1>My cart</h1>
+
+      <div
+        id="cartItems"
+        class="cart-items"
+      ></div>
+    </div>
+
+    <aside class="order-summary">
+      <h2>Order summary</h2>
+
+      <div>
+        <span>Subtotal</span>
+        <b id="subtotal">$0.00</b>
+      </div>
+
+      <div>
+        <span>Shipping</span>
+        <b id="shipping">Free</b>
+      </div>
+
+      <div class="total">
+        <span>Total</span>
+        <b id="total">$0.00</b>
+      </div>
+
+      <button
+        class="btn dark full"
+        id="checkoutButton"
+      >
+        Checkout securely →
+      </button>
+
+      <p class="tiny">
+        Secure payments powered by Razorpay.
+      </p>
+    </aside>
+  </main>
+
+  <div
+    id="toast"
+    class="toast"
+  ></div>
+
+  <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Create account | ShopSphere</title>
+
+  <link
+    rel="preconnect"
+    href="https://fonts.googleapis.com"
+  >
+
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  >
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+
+  <link
+    rel="stylesheet"
+    href="css/style.css"
+  >
+</head>
+
+<body class="auth-page">
+  <a
+    class="brand auth-brand"
+    href="index.html"
+  >
+    SHOP<span>SPHERE</span>
+  </a>
+
+  <main class="auth-wrap">
+    <section class="auth-copy">
+      <p class="eyebrow">JOIN THE CLUB</p>
+
+      <h1>
+        Good things<br>
+        start here.
+      </h1>
+
+      <p>
+        Create an account to save your finds, manage your orders,
+        and shop with ease.
+      </p>
+    </section>
+
+    <form
+      class="auth-card"
+      id="signupForm"
+    >
+      <h2>Create account</h2>
+
+      <p class="muted">
+        Already a member?
+        <a href="login.html">Sign in</a>
+      </p>
+
+      <label>
+        Full name
+        <input
+          type="text"
+          id="signupName"
+          placeholder="Your name"
+          required
+        >
+      </label>
+
+      <label>
+        Email
+        <input
+          type="email"
+          id="signupEmail"
+          placeholder="you@example.com"
+          required
+        >
+      </label>
+
+      <label>
+        Password
+        <input
+          type="password"
+          id="signupPassword"
+          minlength="6"
+          placeholder="At least 6 characters"
+          required
+        >
+      </label>
+
+      <p
+        class="form-message"
+        id="formMessage"
+      ></p>
+
+      <button
+        class="btn dark full"
+        type="submit"
+      >
+        Create account →
+      </button>
+    </form>
+  </main>
+
+  <script src="js/app.js"></script>
+</body>
+
+</html>

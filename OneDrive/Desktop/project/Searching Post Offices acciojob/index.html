@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Post Office Finder</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <section class="hero">
+    <h1>Post Office Application.</h1>
+    <p>Find nearby post offices using your IP address.</p>
+  </section>
+
+  <section class="ip-panel">
+    <p>Your Current IP Address: <strong id="ipAddress">Loading...</strong></p>
+    <button id="getDataButton" disabled>Get Data</button>
+    <p id="status"></p>
+  </section>
+
+  <main id="results" hidden>
+    <h2>IP Address: <span id="resultIp"></span></h2>
+
+    <div id="map"></div>
+
+    <div class="details">
+      <p><b>Lat:</b> <span id="latitude"></span></p>
+      <p><b>Long:</b> <span id="longitude"></span></p>
+      <p><b>City:</b> <span id="city"></span></p>
+      <p><b>Region:</b> <span id="region"></span></p>
+      <p><b>Organisation:</b> <span id="organisation"></span></p>
+      <p><b>Hostname:</b> <span id="hostname"></span></p>
+    </div>
+
+    <h2>Time Zone: <span id="timezone"></span></h2>
+    <h2>Date And Time: <span id="localTime"></span></h2>
+    <h2>Pincode: <span id="pincode"></span></h2>
+    <h2>Message: <span id="postOfficeMessage"></span></h2>
+
+    <label for="search">Search By Name or Branch Office</label>
+    <input id="search" type="search" placeholder="Search Post Office" />
+
+    <section id="postOffices" class="post-office-grid"></section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

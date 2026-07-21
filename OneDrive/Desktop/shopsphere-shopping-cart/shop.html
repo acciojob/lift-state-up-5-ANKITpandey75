@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Shop | ShopSphere</title>
+
+  <link
+    rel="preconnect"
+    href="https://fonts.googleapis.com"
+  >
+
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  >
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+
+  <link
+    rel="stylesheet"
+    href="css/style.css"
+  >
+</head>
+
+<body>
+  <div id="siteHeader"></div>
+
+  <main class="shop-layout">
+    <aside class="filters">
+      <div class="filter-title">
+        <h3>Filters</h3>
+
+        <button id="clearFilters">
+          Clear
+        </button>
+      </div>
+
+      <div class="filter-group">
+        <h4>Category</h4>
+
+        <label>
+          <input
+            type="checkbox"
+            class="category-filter"
+            value="men's clothing"
+          >
+          Men's clothing
+        </label>
+
+        <label>
+          <input
+            type="checkbox"
+            class="category-filter"
+            value="women's clothing"
+          >
+          Women's clothing
+        </label>
+
+        <label>
+          <input
+            type="checkbox"
+            class="category-filter"
+            value="electronics"
+          >
+          Electronics
+        </label>
+
+        <label>
+          <input
+            type="checkbox"
+            class="category-filter"
+            value="jewelery"
+          >
+          Jewelry
+        </label>
+      </div>
+
+      <div class="filter-group">
+        <h4>
+          Price range
+          <span id="priceLabel">$0 — $1000</span>
+        </h4>
+
+        <input
+          id="priceRange"
+          type="range"
+          min="10"
+          max="1000"
+          value="1000"
+        >
+      </div>
+
+      <div class="filter-group">
+        <h4>Color</h4>
+
+        <div class="swatches">
+          <button
+            class="swatch black"
+            data-color="black"
+          ></button>
+
+          <button
+            class="swatch red"
+            data-color="red"
+          ></button>
+
+          <button
+            class="swatch blue"
+            data-color="blue"
+          ></button>
+
+          <button
+            class="swatch gold"
+            data-color="gold"
+          ></button>
+        </div>
+
+        <p class="tiny">
+          Color tags are used to refine visual product matches.
+        </p>
+      </div>
+    </aside>
+
+    <section class="catalog">
+      <div class="catalog-top">
+        <div>
+          <p class="eyebrow">EXPLORE OUR EDIT</p>
+
+          <h1>Shop all products</h1>
+        </div>
+
+        <div class="catalog-controls">
+          <label class="search">
+            ⌕
+            <input
+              id="searchInput"
+              placeholder="Search products"
+            >
+          </label>
+
+          <select id="sortSelect">
+            <option value="featured">
+              Sort: Featured
+            </option>
+
+            <option value="price-asc">
+              Price: Low to high
+            </option>
+
+            <option value="price-desc">
+              Price: High to low
+            </option>
+
+            <option value="rating">
+              Top rated
+            </option>
+          </select>
+        </div>
+      </div>
+
+      <div
+        id="productGrid"
+        class="product-grid"
+      >
+        <p class="loading">
+          Curating products…
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <div
+    id="toast"
+    class="toast"
+  ></div>
+
+  <script src="js/app.js"></script>
+</body>
+
+</html>

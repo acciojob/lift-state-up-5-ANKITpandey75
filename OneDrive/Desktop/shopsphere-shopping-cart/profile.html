@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Profile | ShopSphere</title>
+
+  <link
+    rel="preconnect"
+    href="https://fonts.googleapis.com"
+  >
+
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  >
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+
+  <link
+    rel="stylesheet"
+    href="css/style.css"
+  >
+</head>
+
+<body>
+  <div id="siteHeader"></div>
+
+  <main class="profile-page">
+    <section>
+      <p class="eyebrow">ACCOUNT SETTINGS</p>
+
+      <h1>Your profile</h1>
+
+      <p class="lede">
+        Keep your details up to date for a smoother checkout.
+      </p>
+    </section>
+
+    <form
+      class="profile-form"
+      id="profileForm"
+    >
+      <label>
+        Full name
+        <input
+          id="profileName"
+          required
+        >
+      </label>
+
+      <label>
+        Email
+        <input
+          id="profileEmail"
+          type="email"
+          required
+        >
+      </label>
+
+      <label>
+        Phone number
+        <input
+          id="profilePhone"
+          type="tel"
+          placeholder="Optional"
+        >
+      </label>
+
+      <label>
+        Delivery address
+        <textarea
+          id="profileAddress"
+          rows="3"
+          placeholder="Optional"
+        ></textarea>
+      </label>
+
+      <p
+        class="form-message"
+        id="formMessage"
+      ></p>
+
+      <button
+        class="btn dark"
+        type="submit"
+      >
+        Save changes
+      </button>
+    </form>
+  </main>
+
+  <script src="js/app.js"></script>
+</body>
+
+</html>

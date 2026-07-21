@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Timezone Finder</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>Timezone Finder</h1>
+
+    <section class="card">
+      <h2>Your Current Timezone</h2>
+      <div id="current-timezone" class="result">Fetching your location...</div>
+    </section>
+
+    <section class="card">
+      <h2>Find Timezone by Address</h2>
+
+      <div class="form-row">
+        <input type="text" id="address" placeholder="Enter address" />
+        <button id="search-btn">Get Timezone</button>
+      </div>
+
+      <p id="error"></p>
+      <div id="address-timezone" class="result"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
