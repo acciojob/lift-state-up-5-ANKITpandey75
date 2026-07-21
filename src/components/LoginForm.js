@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 
-function LoginForm({ isLoggedIn, setIsLoggedIn }) {
+function LoginForm({ setIsLoggedIn }) {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+  const handleSubmit = (event) => {
+    event.preventDefault();
     setIsLoggedIn(true);
   };
 
@@ -16,22 +16,22 @@ function LoginForm({ isLoggedIn, setIsLoggedIn }) {
         <input
           type="text"
           value={username}
-          onChange={(e) => setUsername(e.target.value)}
+          onChange={(event) => setUsername(event.target.value)}
         />
       </label>
 
-      <br />
+      <br /><br />
 
       <label>
         Password:
         <input
           type="password"
           value={password}
-          onChange={(e) => setPassword(e.target.value)}
+          onChange={(event) => setPassword(event.target.value)}
         />
       </label>
 
-      <br />
+      <br /><br />
 
       <button type="submit">Login</button>
     </form>
