@@ -13,7 +13,7 @@ function App() {
       <h1>Parent Component</h1>
 
       {isLoggedIn ? (
-        <h2>Logged In!</h2>
+        <p>You are logged in!</p>
       ) : (
         <LoginForm isLoggedIn={isLoggedIn} onLogin={handleLogin} />
       )}
