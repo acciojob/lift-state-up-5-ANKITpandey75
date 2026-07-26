@@ -1,39 +1,39 @@
 import React, { useState } from "react";
 
-function LoginForm({ setIsLoggedIn }) {
+function LoginForm({ isLoggedIn, onLogin }) {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    setIsLoggedIn(true);
+    onLogin();
   };
 
   return (
     <form onSubmit={handleSubmit}>
-      <label>
-        Username:
+      <div>
+        <label htmlFor="username">Username:</label>
         <input
+          id="username"
           type="text"
           value={username}
           onChange={(event) => setUsername(event.target.value)}
         />
-      </label>
+      </div>
 
-      <br /><br />
-
-      <label>
-        Password:
+      <div>
+        <label htmlFor="password">Password:</label>
         <input
+          id="password"
           type="password"
           value={password}
           onChange={(event) => setPassword(event.target.value)}
         />
-      </label>
+      </div>
 
-      <br /><br />
-
-      <button type="submit">Login</button>
+      <button type="submit" disabled={isLoggedIn}>
+        Login
+      </button>
     </form>
   );
 }
